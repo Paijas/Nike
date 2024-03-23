@@ -1,30 +1,41 @@
+import Nav from './sections/Nav'
+import Hero from './sections/Hero'
+import CustomerReviews from './sections/CustomerReviews'
+import PopularProducts from './sections/PopularProducts'
+import SuperQuality from './sections/SuperQuality'
+import Services from './sections/Services'
+import SpecialOffers from './sections/SpecialOffers'
+import Subscribe from './sections/Subscribe'
+import Footer from './sections/Footer'
+
 export default function App() {
   return (
     <main className="relative">
-        nav
+   
+        <Nav/>
         <section className="xl:padding-1 wide:padding-r padding-b">
-          Hero
+          <Hero/>
         </section>
         <section className="padding">
-          PopularProducts
+          <PopularProducts/>
         </section>
         <section className="padding">
-          SuperQuality
+          <SuperQuality/>
         </section>
         <section className="padding-x py-10">
-          Services
+          <Services/>
         </section>
         <section className="padding">
-          SpecialOffers
+          <SpecialOffers/>
         </section>
         <section className="bg-pale-blue padding">
-          CustomerReviews
+          <CustomerReviews/>
         </section>
         <section className="padding-x sm:py-32 py-16 w-full">
-          Subscribe
+          <Subscribe/>
         </section>
         <section className="padding-x bg-black padding-t pb-8">
-          Footer
+          <Footer/>
         </section>
     </main>
   )
