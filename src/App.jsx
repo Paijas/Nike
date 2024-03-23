@@ -1,4 +1,4 @@
-import Nav from './sections/Nav'
+import Nav from './components/Nav'
 import Hero from './sections/Hero'
 import CustomerReviews from './sections/CustomerReviews'
 import PopularProducts from './sections/PopularProducts'
