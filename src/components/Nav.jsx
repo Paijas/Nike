@@ -9,7 +9,7 @@ export default function Nav() {
 
   console.log(showNav)
   return (
-    <header className='padding-x py-8 absolute z-10 w-full'>
+    <header className='padding-x py-8 absolute z-20 w-full'>
       <nav className='flex justify-between items-center max-container'>
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
