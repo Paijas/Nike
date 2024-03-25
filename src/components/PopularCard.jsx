@@ -38,20 +38,22 @@ export  function PopularCard({imgURL, name, price}) {
             <p className="mt-2 font-semibold font-montserrat text-coral-red text-2lx leading-normal ">{price}</p>
         </div>
       </Dialog.Trigger>
+      
+      
       <Dialog.Portal className='justify-center items-center'>
         <Dialog.Overlay className="inset-0 fixed bg-black/50">
           
-          <Dialog.Content className="bg-white w-[50vh] h-[60vh] justify-center p-4 max-sm:flex max-sm:justify-normal max-sm:h-screen ">
+          <Dialog.Content className="bg-white w-[50vh] h-[100vh] md:float-right justify-center max-sm:flex max-sm:justify-normal max-sm:h-screen ">
             
             <Dialog.Close className="top-0 right-0 absolute m-4 ">
               <X className="flex text-slate-gray size-[32px]"/>
             </Dialog.Close>
 
-              <div className="flex flex-col mt-[30px]">
+              <div className="flex flex-col max-sm:mt-[40px] mt-[30px] p-4  ">
                 
-                <h1 className="font-palanquin text-3xl font-semibold mb-2 ml-2  ">{name}</h1>
+                <h1 className="font-palanquin text-[34px] font-bold  ml-2 md:ml-5 md:text-[38px] mb-4">{name}</h1>
                 
-                <img src={imgURL} className="size-[400px] " />
+                <img src={imgURL} className="size-[400px] md:m-auto " />
 
                 <div className="flex justify-between items-center mx-4 mt-4 border-b-[1px] border-slate-200">
                   <h1 className="font-semibold text-coral-red text-3xl font-montserrat">{price}</h1>
@@ -71,7 +73,7 @@ export  function PopularCard({imgURL, name, price}) {
 
                 </div>
 
-                  <a href="../sections/Hero.jsx" className="max-sm:w-full bg-coral-red text-3xl text-white font-palanquin max-sm:h-[70px] max-sm:mt-8 flex justify-center font-bold items-center rounded-xl ">
+                  <a href="../sections/Hero.jsx" className="flex flex-col max-sm:w-full bg-coral-red text-3xl text-white font-palanquin max-sm:h-[70px] max-sm:mt-8  justify-center font-bold items-center rounded-xl md:mt-[30px] md:text-3xl md:h-[70px]  ">
                     <h1>Comprar</h1>
                   </a>
               </div>
