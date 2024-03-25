@@ -1,5 +1,6 @@
 import {products} from '../constants'
 import {PopularCard} from '../components/PopularCard'
+
 export default function PopularProducts() {
   return (
     <section id='products' className='max-container max-sm:mt-12'>
@@ -12,8 +13,12 @@ export default function PopularProducts() {
 
       <div className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-col-2 grid-col-1 sm:gap-6 gap-14'>
         {products.map((product) =>(
-          <PopularCard key={product.name} {...product}/>
+          <>
+            <PopularCard  key={product.name} {...product}/>
+          </>
         ))}
+
+
       </div>
 
     </section>
